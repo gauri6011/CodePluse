@@ -7,14 +7,17 @@ public class CalculatePercentage {
         int CNS = 90;
         
         //calculate the percentage
-        int Total_Marks_Obtained=CS+AI+WAD+DSBDA+CNS;
-        float Per = ((Total_Marks_Obtained) / 500)*100;
+        float Total_Marks_Obtained=CS+AI+WAD+DSBDA+CNS;
+        System.out.println("Total_Marks_Obtained :" +Total_Marks_Obtained);
+
+        float percentage = ((Total_Marks_Obtained) / 500)*100;
+        System.out.println("Percentage is: " +percentage );
 
         //use type-cast operator
-        int percentage = (int) Per;
+        int percentage1 = (int) percentage;
 
         //calculate grade using ternary operator
-        char Grade=(percentage >=90 && percentage<=100) ?('A'):(percentage <90 && percentage>=75) ?('B'):(percentage<75 && percentage<=55) ?('C'):(percentage<55 && percentage<=35) ?('D'):('f');
+        char Grade=(percentage1 >=90 && percentage1<=100) ? ('A'):((percentage1 <90 && percentage1 >=75) ? ('B'):(percentage1 <75 && percentage1>=55) ?('C'):(percentage1<55 && percentage1>=35) ?('E'):('F'));
         System.out.println("Grade is :" +Grade);
 
     }
@@ -23,5 +26,8 @@ public class CalculatePercentage {
 /*outputa:
  Compile time success
  Run time success
+ Total_Marks_Obtained :358.0
+ Percentage is: 71.6
  Grade is :C
  */
+
