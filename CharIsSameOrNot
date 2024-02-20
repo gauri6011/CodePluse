@@ -1,0 +1,24 @@
+//Write java program to cheak user input and compile time input is same or not(char and int)
+
+import java.util.Scanner;
+public class CharIsSameOrNot{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter char value: ");
+        //user input
+        char a ='A';
+        //compile time input
+        int b = sc.nextInt();
+        //use ternary operator
+        String Result = (a==b) ? ("This is same"): ("This is not same");
+        System.out.println(Result);
+        
+    }
+}
+
+/*compile time success
+ * runtime succcess
+ * Enter char value:
+ * A
+ * This is same
+ */
