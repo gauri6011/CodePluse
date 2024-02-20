@@ -1,5 +1,5 @@
 
-class CheakOddEven {
+class CheckOddEven {
     public static void main(String[] args) {
         //Add two numbers
         int a = 15;
