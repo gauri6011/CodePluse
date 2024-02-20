@@ -1,0 +1,33 @@
+/*Write Program to cheack if given user input is Buzz number or not.(number should be two digit) */
+
+import java.util.Scanner;
+class BuzzNumber
+{
+public static  void main(String[] args)
+{
+
+//object of scanner class
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number:");
+
+int num=sc.nextInt();
+String Result=(num<=99&&num>=10)?((num%7==0||num%10==7)?("The given number is Buzz"):("The given number is not Buzz")):("invalid number");
+
+System.out.println(Result);
+}
+}
+
+/*OutPut:
+compile time success
+runtime success
+Enter the number:
+49
+The given number is Buzz
+Enter the number:
+77
+The given number is Buzz
+Enter the number:
+2
+invalid number
+ */
+
