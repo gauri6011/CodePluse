@@ -1,0 +1,25 @@
+// Write program to take user inputin int value and cheak it is even or odd
+
+import java.util.*;
+public class CheakEvenOrOdd {
+    public static void main(String[] args) {
+        Scanner cno = new Scanner(System.in);
+        System.out.println("Enter the int value:");
+        int value=cno.nextInt();
+
+        // cheak number is even or odd using ternary operator
+        String Result= value%2!= 0 ? ("Given number is odd") : ("Given number is even");
+        System.out.println(Result);
+    } 
+}
+
+/*output:
+compile time success
+runtime success
+Enter the int value:
+33
+Given number is odd
+Enter the int value:
+4
+Given number is even
+ */
