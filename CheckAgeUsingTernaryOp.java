@@ -1,4 +1,4 @@
-class CheakAgeUsingTernaryOp {
+class CheckAgeUsingTernaryOp {
     public static void main(String[] args) {
         int k=21;
         int d=88;
