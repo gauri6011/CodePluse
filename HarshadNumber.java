@@ -20,5 +20,6 @@ public class HarshadNumber {
 /*output:
 compile time success
 run time success
-The LCM of given number is 36
+Given number is harshad Number
+
 */
